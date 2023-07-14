@@ -32,8 +32,8 @@ img {
 }
 
 .container {
-	max-height: 16em;
-	max-width: 16em;
+	max-height: 200px;
+	max-width: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -51,5 +51,12 @@ img {
 }
 
 .container:active {
-	transform: scale(0.95);
+	transform: scale(0.90);
+}
+
+@media (max-width: 1000px) {
+	.container {
+		max-height: 8em;
+		max-width: 8em;
+	}
 }
